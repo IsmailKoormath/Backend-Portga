@@ -50,6 +50,8 @@ const getAllProperties = async (req, res) => {
   }
 };
 
+// get single Property
+
 const getPropertyDetail = async (req, res) => {
   const { id } = req.params;
   const propertyExists = await Property.findOne({ _id: id }).populate("creator"
@@ -61,6 +63,7 @@ const getPropertyDetail = async (req, res) => {
     res.status(404).json({ message: "Property not found" });
   }
 };
+
 //Create properties
 
 const createProperty = async (req, res) => {
@@ -96,6 +99,8 @@ const createProperty = async (req, res) => {
   }
 };
 
+// update property
+
 const updateProperty = async (req, res) => {
   try {
     const {id}= req.params
@@ -113,7 +118,8 @@ const updateProperty = async (req, res) => {
   }
 };
 
-// delete p
+// delete property
+
 const deleteproperty = async (req, res) => {
   try {
     const {id}=req.params
@@ -127,7 +133,6 @@ const deleteproperty = async (req, res) => {
 
     await propertyToDelete.creator.save({ session})
     await session.commitTransaction()
-
 
 res.status(200).json({message: 'Property deleted successfully'})
 

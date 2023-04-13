@@ -12,7 +12,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
-//git all properties
+//get all properties
 
 const getAllProperties = async (req, res) => {
   const {
@@ -78,6 +78,9 @@ const createProperty = async (req, res) => {
     if (!user) throw new Error("User not found");
 
     const photoUrl = await cloudinary.uploader.upload(photo);
+
+
+    
 
     const newProperty = await Property.create({
       title,

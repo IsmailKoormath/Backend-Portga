@@ -13,7 +13,7 @@ const createUser = async (req, res) => {
     try{
         const { name, email, avatar } = req.body
         const userExists = await User.findOne({email})
-        if(userExists) return res.status(409).json(userExists)
+        // if(userExists) return res.status(409).json(userExists)
         const newUser = await User.create({
             name,
             email,

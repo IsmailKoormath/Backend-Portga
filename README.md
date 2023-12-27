@@ -1,8 +1,9 @@
 <h2>PORTGA - Real Estate Management Backend</h2>
-PORTGA is a real estate management backend designed to handle property management processes. This project is built using TypeScript, Node.js, Express.js, and MongoDB as the database.
+PORTGA is a real estate management backend designed to handle property management processes.<br>
+This project is built using TypeScript, Node.js, Express.js, and MongoDB as the database.
 
-Getting Started
-To run the backend locally, follow these steps:
+Getting Started<br>
+To run the backend locally, follow these steps:<br>
 
 1. Make sure you have Node.js and npm installed on your machine.
 
@@ -13,16 +14,16 @@ To run the backend locally, follow these steps:
 4. Run the following command to install the dependencies:
 
 
-npm install
+npm install<br>
 Start the backend using the following command:
 
 
-npm start
+npm start<br>
 The backend will be accessible at http://localhost:8080.
 
-Technologies Used
+Technologies Used<br>
 
-. TypeScript
-. Node.js
-. Express.js
-. MongoDB
+. TypeScript<br>
+. Node.js<br>
+. Express.js<br>
+. MongoDB<br>

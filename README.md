@@ -1,4 +1,4 @@
-PORTGA - Real Estate Management Backend
+<h2>PORTGA - Real Estate Management Backend</h2>
 PORTGA is a real estate management backend designed to handle property management processes. This project is built using TypeScript, Node.js, Express.js, and MongoDB as the database.
 
 Getting Started
